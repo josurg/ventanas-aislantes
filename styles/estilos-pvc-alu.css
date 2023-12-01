@@ -1,0 +1,262 @@
+/*
+Autor: JESUS ANGEL RUIZ
+Asignatura: LMGSI
+Unidad: UD 1
+Tarea: Tarea evaluativa 2 - Primer sitio web con formato (50%)
+Autoevaluación: https://docs.google.com/document/d/1pYBzJSqrdKv-DTFYTvWVLus4jLyFHbtRmuaxh1kH88c/edit?usp=drive_link
+
+/* Definimos las propiedades css del body para definir la fuente que se usará, los margenes, alineación del texto*/
+body {
+	text-align: center;
+	margin: 2px;
+    font-family: 'Helvetica', Arial, Helvetica, sans-serif, monospace;
+
+	/* Se ha usado flexbox en columnas pero podría haberse obviado porque es como se posicionan por defecto las etiquetas semánticas */
+	display: flex;
+	flex-direction: column;
+}
+
+/* Estilos barra de navegación y article */
+nav, article {
+	background-color: rgb(9, 109, 122);
+	color: #fff;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+/* Estilos para el pie de página */
+footer {
+	background-color: rgb(9, 109, 122);
+	color: #fff;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 0.75rem;
+    margin: 0.5rem;
+}
+
+/* Estilos de la cabecera */
+header {
+	background-color: rgb(9, 109, 122);
+	color: #fff;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 1.5rem;
+    margin: 0.5rem;
+    position: relative;
+}
+
+/* Estilos para bloques section */
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(9, 109, 122);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    align-content: baseline;
+}
+
+.section-main {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(9, 109, 122);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+/* Estilos para el pie de página */
+aside {
+        background-color: deepskyblue;
+    border-radius: 10px;
+    /* Usamos stretcha para que ocupe todo el espacio del contenedor */
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    padding-right: 10px;
+    width: 35%;
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+    margin-bottom: 1.5rem;
+
+}
+
+/* Estilos para el logo que sale en todas las páginas con poscionamiento absoluto */
+.logo{
+    position: absolute;
+    border-radius: 10px;
+    top: 0.5rem;
+    left: 1.5rem;
+    width: 7rem;
+    height: 5rem;
+}
+
+header h4 {
+	position: absolute;
+	top: 1.5rem;
+	left: 5rem;
+	width: 10rem;
+	height: 1.5rem;
+	z-index: 1;
+	background-color: rgb(9, 109, 122);
+}
+
+/* Estilos del menú de navegación */
+nav ul {
+	/* Para posicionar la lista en una fila */
+	display:flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+	flex-direction: row;
+	justify-content: center;
+	list-style: none;
+	margin: 10; 
+	background-color: deepskyblue;
+  }
+
+  nav li {
+	padding: 1em;
+}
+nav ul a {
+	text-decoration: none;
+	color: white;
+  }
+/* Para cambiar el color de fondo al pasar el ratón por encima */
+ul a:hover {
+	background-color: rgb(9, 109, 122);
+  }
+
+/* Estilos del bloque main */
+main {
+    /*display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;*/
+    background-color: rgb(9, 109, 122);
+	color: #fff;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 1.5rem;
+    margin: 0.5rem;
+    display: inline-block;
+  	padding-right: 1.5rem;
+	}
+/* Definimos tamaño máximo de imagen */
+img {
+    max-width: 350px;
+}
+
+/* Imagen float y texto alrededor */
+.imagen-float {
+    border-radius: 10px;
+	width: 28%;
+	float: left;
+	margin:1rem 1rem;
+}
+
+/* Características de imagen en formato de botón */
+.imagen-boton {
+    border-radius: 10px;
+    width: 50%;
+    float: centre;
+}
+
+/* Definimos texto general. Generalmente para etiquetas p */
+.texto {
+	padding-left: 1rem;
+	text-align: justify ;
+	line-height: 2rem;;
+}
+
+/* Definimos texto para titulos. */
+.texto-title {
+    padding-left: 1rem;
+	text-align: center ;
+	line-height: 2rem;
+    font-size: 2rem; 
+}
+
+/* Información sobre el tema descrito en el título a que corresponda */
+article {
+    background-color: deepskyblue;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    margin-bottom: 25px;
+    padding-right: 25px;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    justify-content: space-around;
+    width: 65%;
+}
+
+/* Estilo para las etiquietas de listas en article */
+article ul li {
+	text-align: left;
+}
+
+/* Estilo boton genérico */
+.boton {
+    float: right;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: darkgrey;
+    font-size: .9em;
+    border-radius: 10px;
+    margin: auto;
+}
+
+/* Estilo boton del nav */
+.boton-nav {
+    float: right;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: deepskyblue;
+    font-size: .9em;
+    border-radius: 10px;
+    margin: auto;
+}
+
+/* Estilo boton del portfolio */
+.boton-portfolio {
+    float: right;
+    position:bottom;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: darkgrey;
+    font-size: .9em;
+    border-radius: 10px;   
+}
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* Estilo para los enlaces de producto */
+.enlace-producto {
+    display: flex;
+    justify-content: center;
+}

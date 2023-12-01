@@ -1,0 +1,69 @@
+<!--
+Autor: JESUS ANGEL RUIZ GONZALEZ
+Asignatura: LMGSI
+Unidad: UD 2
+Tarea: Tarea evaluativa -80% - Sitio Web
+Autoevaluación: https://docs.google.com/document/d/1F98EsRccazsL0nbyovESLIsq6WsaXUt0EbhJUEhpW2w/edit?usp=drive_link
+-->
+
+<!DOCTYPE>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <title>Sitio Web de Ventanas Aislantes</title>
+    <link rel="stylesheet" type="text/css" href="../styles/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles/estilos.css"/>
+  </head>
+
+  <body>
+    <!-- Usamos etiquetas semánticas para los diferentes contenedores. Header, nav, aside y footer -->
+    <header>
+      <h1 class="texto-title">Ventanas Aislantes</h1>
+      <img class="logo" src="../img/pexels-rex-way-3613236-logo_edited.jpg" alt="logo" width="20%" height="40%" />
+    </header>
+    
+    <!-- Menú de navegación. Usa flexbox -->
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../productos.html">Productos</a></li>
+        <li><a href="../portfolio.html">Portfolio</a></li>
+        <li><a href="../noticias.html">Noticias</a></li>
+        <li><a href="../contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article>
+        <h1 class="texto-title">PRESENTACIÓN</h1>
+        <img class="imagen-float" src="../img/pexels-pixabay-269077_fachada.jpg" alt="fachada">
+        <p class="texto"> Ventanas Aislantes nació con el objetivo de ser un referente en el sector de las carpinterías de PVC, Aluminio,
+            Madera y Mixta ofreciendo un producto de calidad.</p>
+        <p class="texto">Siempre con ganas de mejorar hemos desarrollado cerramientos novedosos, que se adecuan a las necesidades y demandas
+            de los clientes</p>
+        <p class="texto">Con la idea de alcanzar los mejores niveles de aislamiento térmico y acústico, en definitiva,
+            los mayores niveles de confort.</p> 
+        <p class="texto">Contamos con un equipo de profesionales concienciados en la atención al cliente y en la necesidad de elaborar un 
+            producto de máxima calidad.</p> 
+        <a href="../portfolio.html" class="boton-portfolio">Portfolio</a>
+      </article>
+
+      <!-- He introducido el aside dentro del main para que se adecúe a lo que necesito. podría ir fuera -->
+      <aside>
+        <h1 class="texto-title">PRODUCTOS</h1>
+        <a href="../productos/pvc.html" class="boton-nav"> <img class="imagen-boton" src="../img/PVC-70.png" alt="PVC">PVC</a>
+        <a href="../productos/aluminio.html" class="boton-nav"> <img class="imagen-boton" src="../img/Alu-70.png" alt="Aluminio">Aluminio</a>
+        <a href="../productos/madera.html" class="boton-nav"> <img class="imagen-boton" src="../img/M68.png" alt="Madera">Madera</a>
+        <a href="../productos/mixta.html" class="boton-nav"> <img class="imagen-boton" src="../img/MA45.png" alt="Mixta">Mixta</a> 
+      </aside>
+    </main> 
+  
+    <footer>
+      <p>Autoría y licencias: Página web realizada por Jesús Ángel Ruiz con fines educativos. 
+        Todos los derechos de las imágenes están reservados y pertenecen a sus autores. Año 2023.</p>
+    </footer>
+
+  </body>
+</html>
